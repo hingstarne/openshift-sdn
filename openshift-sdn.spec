@@ -8,7 +8,7 @@
 %global commit      2d06ba8340dc3e6543a762294f97935220f52cc0
 
 Name:           openshift-sdn
-Version:        0.4
+Version:        0.5
 Release:        1%{?dist}
 Summary:        SDN solutions for OpenShift
 License:        ASL 2.0
@@ -127,6 +127,9 @@ install -m 0644 rel-eng/openshift-sdn-node.sysconfig %{buildroot}%{_sysconfdir}/
 %systemd_postun
 
 %changelog
+* Mon Jun 01 2015 Arne-Kristian HINGST (contractor) <arne-kristian.hingst@amadeus.com>
+- First version
+
 * Fri Jan 30 2015 dobbymoodge <jolamb@redhat.com> 0.4-1
 - fix Source0 line in specfile (jolamb@redhat.com)
 
